@@ -1,6 +1,5 @@
 domready = require('domready')
 
-
 module.exports = class Carousel
 
   constructor: (@selector) ->
@@ -38,6 +37,9 @@ module.exports = class Carousel
     @animate()
 
   animate: ->
-    $("html, body").animate
-      scrollTop: window.innerHeight*@offset
+    if typeof jQuery isnt "undefined"
+      $("html, body").animate
+        scrollTop: window.innerHeight*@offset
+    else
+      document.body.scrollTop = window.innerHeight*@offset
 

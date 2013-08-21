@@ -49,9 +49,13 @@
     };
 
     Carousel.prototype.animate = function() {
-      return $("html, body").animate({
-        scrollTop: window.innerHeight * this.offset
-      });
+      if (typeof jQuery !== "undefined") {
+        return $("html, body").animate({
+          scrollTop: window.innerHeight * this.offset
+        });
+      } else {
+        return document.body.scrollTop = window.innerHeight * this.offset;
+      }
     };
 
     return Carousel;

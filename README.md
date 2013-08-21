@@ -2,6 +2,8 @@
 
 Turn HTML pages into keyboard-navigable slideshows. Designed to be used with [browserify](http://browserify.org/).
 
+If jQuery is available, scroll transitions will be animated.
+
 ## Installation
 
 ```
@@ -9,6 +11,8 @@ npm install carousel --save
 ```
 
 ## Usage
+
+First, check out the demo directory.
 
 Create a simple script to use Carousel:
 
