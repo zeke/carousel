@@ -43,8 +43,8 @@ Then drop the browserified script into your HTML page and you're good to go.
 
 ## Demo
 
-Visit [buildpack-adventure-2.herokuapp.com](http://buildpack-adventure-2.herokuapp.com) for a
-working example of Carousel in action, then check out its [source on github](https://github.com/zeke/buildpack-adventure-2#readme).
+Visit [ba2.herokuapp.com](http://ba2.herokuapp.com) for a
+working example of Carousel in action, then check out its [source on github](https://github.com/zeke/ba2#readme).
 
 ## Hacking
 
