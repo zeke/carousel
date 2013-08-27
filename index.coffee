@@ -14,8 +14,14 @@ module.exports = class Carousel
       @slide_count = document.querySelectorAll("#{@selector} > *").length
 
       document.body.addEventListener 'keydown', (event) =>
-        @next() if event.keyCode in [39, 40] # right or down
-        @prev() if event.keyCode in [37, 38] # left or up
+        # right, down, j, or space
+        if event.keyCode in [39, 40, 74, 32]
+            event.preventDefault()
+            @next()
+        # left, up, or k
+        if event.keyCode in [37, 38, 75]
+            event.preventDefault()
+            @prev()
 
       @getOffset()
 
