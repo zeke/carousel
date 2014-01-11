@@ -1,6 +1,6 @@
 {
   "name": "carousel",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Turn HTML pages into keyboard-navigable slideshows.",
   "main": "index.js",
   "scripts": {
