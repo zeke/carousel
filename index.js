@@ -14,10 +14,12 @@
         _this.slide_count = document.querySelectorAll("" + _this.selector + " > *").length;
         document.body.addEventListener('keydown', function(event) {
           var _ref, _ref1;
-          if ((_ref = event.keyCode) === 39 || _ref === 40) {
+          if ((_ref = event.keyCode) === 39 || _ref === 40 || _ref === 74 || _ref === 32) {
+            event.preventDefault();
             _this.next();
           }
-          if ((_ref1 = event.keyCode) === 37 || _ref1 === 38) {
+          if ((_ref1 = event.keyCode) === 37 || _ref1 === 38 || _ref1 === 75) {
+            event.preventDefault();
             return _this.prev();
           }
         });
