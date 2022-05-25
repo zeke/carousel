@@ -22,6 +22,13 @@ var Carousel = require('carousel');
 new Carousel('#slides');
 ```
 
+Use ES6 
+
+```js
+import Carousel from "carousel"
+new Carousel('#slides');
+```
+
 Use browserify to bundle it up for the browser:
 
 ```sh
@@ -38,7 +45,7 @@ Then drop the browserified script into your HTML page and you're good to go.
   <li>a slide</li>
   <li>another slide</li>
   <li>keep on slidin'</li>
-<ol>
+</ol>
 ```
 
 ## Demo
